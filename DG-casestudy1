@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study: Data Governance in Air Quality Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f5f7fa; color: #222; }
+        header { background: #2c3e50; color: #fff; padding: 2rem 1rem 1rem 1rem; text-align: center; }
+        main { max-width: 900px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
+        h1, h2, h3 { color: #2c3e50; }
+        h1 { margin-bottom: 0.5em; }
+        h2 { margin-top: 2em; }
+        pre, code { background: #f2f2f2; padding: 0.5em; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+        th, td { border: 1px solid #ddd; padding: 0.5em; text-align: left; }
+        th { background: #eaf1fb; }
+        .block { background: #eaf1fb; padding: 1em; border-radius: 6px; margin: 1em 0; }
+        ul { margin-left: 1.5em; }
+        @media (max-width: 600px) {
+            main { padding: 1em; }
+            table, thead, tbody, th, td, tr { display: block; }
+            th, td { padding: 0.5em 0; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Case Study: Data Governance in Air Quality Data</h1>
+    <p><strong>From Initial Collection to Final Analysis</strong></p>
+</header>
+<main>
+    <section>
+        <h2>1. Background & Objectives</h2>
+        <p>
+            Urban areas face growing air quality challenges. Effective data governance ensures air quality data is <strong>reliable, accessible, and actionable</strong> for policy, research, and public engagement.
+        </p>
+        <ul>
+            <li><strong>Objective:</strong> Develop a comprehensive data governance framework for urban air quality monitoring, ensuring data is FAIR (Findable, Accessible, Interoperable, Reusable) and high quality.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Stakeholder Engagement</h2>
+        <ul>
+            <li><strong>Public Administration:</strong> Environmental agencies, city government</li>
+            <li><strong>Researchers:</strong> Universities, scientists</li>
+            <li><strong>Civil Society:</strong> NGOs, citizen groups</li>
+            <li><strong>Business:</strong> Technology providers, industry</li>
+            <li><strong>General Public:</strong> Residents, commuters</li>
+        </ul>
+        <p>
+            Multi-stage consultations identify needs, address privacy, access, and resolve conflicts early.
+        </p>
+    </section>
+
+    <section>
+        <h2>3. Data Governance Framework Structure</h2>
+        <ul>
+            <li><strong>Ownership & Stewardship:</strong> Define data owners, managers, and accountability.</li>
+            <li><strong>Access Rights:</strong> Set rules for viewing, using, or modifying data.</li>
+            <li><strong>Quality Standards:</strong> Metrics for accuracy, timeliness, completeness, reliability.</li>
+            <li><strong>Metadata & Provenance:</strong> Document sources, transformations, and quality checks.</li>
+            <li><strong>Privacy & Security:</strong> Controls for sensitive data and regulatory compliance.</li>
+            <li><strong>Interoperability:</strong> Use standard formats and APIs for data sharing.</li>
+            <li><strong>Open Data Policies:</strong> Promote public access while balancing privacy and commercial interests.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Implementation Workflow</h2>
+        <ol>
+            <li><strong>Data Collection</strong>: Validated sensors, standard protocols, rich metadata.</li>
+            <li><strong>Ingestion & Quality Control</strong>: Automated/manual checks, calibration, provenance tracking.</li>
+            <li><strong>Integration & Standardization</strong>: Unified formats, harmonization across datasets.</li>
+            <li><strong>Metadata Management</strong>: Comprehensive records for transparency.</li>
+            <li><strong>Access Control & Security</strong>: Tiered access, privacy protection, compliance.</li>
+            <li><strong>Dissemination</strong>: Dashboards, APIs, downloadable datasets.</li>
+            <li><strong>Continuous Improvement</strong>: Annual reviews, stakeholder feedback, audits.</li>
+        </ol>
+        <div class="block">
+            <strong>Sample Data Flow Diagram:</strong>
+            <pre>
+[Sensors] 
+   ↓
+[Data Ingestion & Quality Control] 
+   ↓
+[Integration & Standardization] 
+   ↓
+[Metadata & Provenance] 
+   ↓
+[Access Control & Open Data Portal] 
+   ↓
+[Analysis & Decision Support]
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Sample Documents</h2>
+        <h3>5.1 Data Governance Policy (Excerpt)</h3>
+        <div class="block">
+            <strong>Purpose:</strong> Ensure responsible collection, management, sharing, and use of air quality data.<br>
+            <strong>Scope:</strong> All air quality monitoring data from city sensors, third parties, and citizen science.<br>
+            <strong>Key Policies:</strong>
+            <ul>
+                <li>Only validated sensors; mandatory metadata (time, location, device ID).</li>
+                <li>Public: Aggregated, anonymized data; Researchers: Raw data with agreement; Internal: Full access.</li>
+                <li>Daily automated checks; quarterly audits.</li>
+                <li>All datasets must include provenance and quality metrics.</li>
+                <li>No PII collected; public data aggregated to block level.</li>
+                <li>Open data license (e.g., CC BY 4.0); API for real-time feeds.</li>
+                <li>Annual policy review.</li>
+            </ul>
+        </div>
+
+        <h3>5.2 Sample Metadata Record</h3>
+        <table>
+            <tr><th>Field</th><th>Value</th></tr>
+            <tr><td>Dataset Name</td><td>Berlin Air Quality Monitoring 2025</td></tr>
+            <tr><td>Owner</td><td>City Environmental Agency</td></tr>
+            <tr><td>Source</td><td>Fixed stations, mobile sensors, crowdsourcing</td></tr>
+            <tr><td>Period</td><td>Jan 2025 – Dec 2025</td></tr>
+            <tr><td>Spatial Coverage</td><td>Berlin, Germany</td></tr>
+            <tr><td>Quality Score</td><td>0.98 (validated)</td></tr>
+            <tr><td>Provenance</td><td>Sensor IDs, calibration logs, processing steps</td></tr>
+            <tr><td>License</td><td>CC BY 4.0</td></tr>
+            <tr><td>Last Updated</td><td>2025-07-10</td></tr>
+            <tr><td>Access Level</td><td>Public (aggregated), Restricted (raw)</td></tr>
+        </table>
+
+        <h3>5.3 Data Quality Report (Excerpt)</h3>
+        <div class="block">
+            <strong>Completeness:</strong> 99.2% of expected records present.<br>
+            <strong>Accuracy:</strong> 98.7% within calibration tolerance.<br>
+            <strong>Timeliness:</strong> 100% available within 5 minutes.<br>
+            <strong>Issues:</strong>
+            <ul>
+                <li>Sensor #A12 drifted; recalibrated 2025-05-15.</li>
+                <li>0.3% data flagged as outliers, removed from public dataset.</li>
+            </ul>
+        </div>
+
+        <h3>5.4 Data Sharing Agreement (Excerpt)</h3>
+        <div class="block">
+            <strong>Parties:</strong> City Environmental Agency & Research Institute<br>
+            <strong>Purpose:</strong> Academic research only<br>
+            <strong>Terms:</strong>
+            <ul>
+                <li>No commercial use or re-identification attempts.</li>
+                <li>Publication must acknowledge data source.</li>
+                <li>Data security measures required.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Final Output: Open Data Portal Example</h2>
+        <ul>
+            <li><strong>Live Map:</strong> Real-time PM2.5, NO2, O3 by district</li>
+            <li><strong>Download:</strong> CSV, JSON, API for hourly data</li>
+            <li><strong>Documentation:</strong> Data dictionary, sensor specs, quality methodology</li>
+            <li><strong>Feedback:</strong> Public form for data issues or suggestions</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Continuous Improvement</h2>
+        <ul>
+            <li>Annual policy review and update</li>
+            <li>Public engagement forums</li>
+            <li>Pilot new data sources and update governance as needed</li>
+        </ul>
+    </section>
+
+    <footer style="text-align:center; margin-top:2em; color:#888;">
+        &copy; 2025 Your Name. Case Study for Portfolio. <br>
+        <small>Built for GitHub Pages</small>
+    </footer>
+</main>
+</body>
+</html>
